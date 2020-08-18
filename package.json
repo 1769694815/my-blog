@@ -1,7 +1,15 @@
 {
+  "name": "my-blog",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "xwen",
+    "email": "spadesw@126.com"
+  },
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "vuepress": "^1.5.3"
