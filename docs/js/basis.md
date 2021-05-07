@@ -108,7 +108,7 @@ console.log(Object.prototype.toString.call(Symbol())) // [object Symbol]
 
 
 
-## 数字与运算符
+## 类型转换与运算符
 
 ## 字符串
 

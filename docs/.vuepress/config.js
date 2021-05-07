@@ -5,19 +5,18 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: '主页', link: '/' },
-            // { text: 'Vue', link: '/vue/' },
+            { text: 'Vue', link: '/vue/' },
             // { text: '微信小程序', link: '/wechat/' },
             { text: '重学js', link: '/js/' }
         ],
         sidebar: {
-            // '/vue/': [{
-            //     title: 'Vue',
-            //     collapsable: false,
-            //     children: [
-            //         { title: '基础', path: '/vue/basic' },
-            //         { title: '进阶', path: '/vue/two' }
-            //     ]
-            // }],
+            '/vue/': [{
+                title: 'Vue',
+                collapsable: false,
+                children: [
+                    { title: '响应式数据原理', path: '/vue/01' }
+                ]
+            }],
             // '/wechat/': [{
             //     title: '微信小程序',
             //     collapsable: false,
@@ -40,5 +39,11 @@ module.exports = {
     },
     markdown: {
         lineNumbers: false // 为每个代码块显示行号
+    },
+    plugins: {
+        '@vuepress/medium-zoom': {
+            selector: 'img.zoom-custom-imgs',
+            options: { margin: 16 }
+        }
     }
 }
