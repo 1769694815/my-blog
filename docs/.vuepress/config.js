@@ -14,7 +14,8 @@ module.exports = {
                 title: 'Vue',
                 collapsable: false,
                 children: [
-                    { title: '响应式数据原理', path: '/vue/01' }
+                    { title: '响应式数据原理', path: '/vue/01' },
+                    { title: '模版编译原理', 'path': '/vue/02' }
                 ]
             }],
             // '/wechat/': [{
